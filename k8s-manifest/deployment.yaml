@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: fastapi
-          image: anmolk992/fastapi-devops:aa9e55c
+          image: anmolk992/fastapi-devops:84abc8c
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
