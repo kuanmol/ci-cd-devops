@@ -7,7 +7,8 @@ app = FastAPI()
 def root():
     msg = "DevOps works 😎 ✅"
     tip = "Kubernetes deployment updated successfully!"
-    return {"msg": msg, "tip": tip}
+    name = "It all ready"
+    return {"msg": msg, "tip": tip, "name": name}
 
 
 @app.get("/health")
