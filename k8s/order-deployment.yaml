@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: order-service.yaml
-          image: YOUR_DOCKERHUB/order-service.yaml:latest
+          image: anmolk992/order-service.yaml:latest
           ports:
             - containerPort: 8000
           livenessProbe:
