@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service.yaml
+  namespace: micro
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: order-service.yaml
+  template:
+    metadata:
+      labels:
+        app: order-service.yaml
+    spec:
+      containers:
+        - name: order-service.yaml
+          image: anmolk992/order-service.yaml:latest
+          ports:
+            - containerPort: 8000
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 10
+            periodSeconds: 10
