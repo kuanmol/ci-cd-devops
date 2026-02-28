@@ -22,5 +22,5 @@ jobs:
 
       - name: Build & Push Order Service
         run: |
-          docker build -t anmolk992/product-service:${{ env.IMAGE_TAG }} ./product-service
+          docker build -t anmolk992/product-service:${{ env.IMAGE_TAG }} ./services/product-service
           docker push anmolk992/product-service:${{ env.IMAGE_TAG }}

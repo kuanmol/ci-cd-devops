@@ -22,5 +22,5 @@ jobs:
 
       - name: Build & Push Order Service
         run: |
-          docker build -t anmolk992/payment-service:${{ env.IMAGE_TAG }} ./payment-service
+          docker build -t anmolk992/payment-service:${{ env.IMAGE_TAG }} ./services/payment-service
           docker push anmolk992/payment-service:${{ env.IMAGE_TAG }}

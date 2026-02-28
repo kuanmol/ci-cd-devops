@@ -22,5 +22,5 @@ jobs:
 
       - name: Build & Push Order Service
         run: |
-          docker build -t anmolk992/notification-service:${{ env.IMAGE_TAG }} ./notification-service
+          docker build -t anmolk992/notification-service:${{ env.IMAGE_TAG }} ./services/notification-service
           docker push anmolk992/notification-service:${{ env.IMAGE_TAG }}

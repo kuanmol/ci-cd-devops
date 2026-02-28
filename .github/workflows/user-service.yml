@@ -22,5 +22,5 @@ jobs:
 
       - name: Build & Push User Service
         run: |
-          docker build -t anmolk992/user-service:${{ env.IMAGE_TAG }} ./user-service
+          docker build -t anmolk992/user-service:${{ env.IMAGE_TAG }} ./services/user-service
           docker push anmolk992/user-service:${{ env.IMAGE_TAG }}
