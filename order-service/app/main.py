@@ -19,7 +19,6 @@ def get_order(order_id: int):
         "product": "Laptop",
         "user": user_data
     }
-
 @app.get("/health")
 def health():
     return {"status": "ok"}

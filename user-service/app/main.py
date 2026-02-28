@@ -13,7 +13,6 @@ def get_user(user_id: int):
         "name": "Anmol",
         "email": "anmol@example.com"
     }
-
 @app.get("/health")
 def health():
     return {"status": "ok"}
