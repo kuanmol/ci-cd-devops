@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: anmolk992/product-service:5bd9b2c
+          image: anmolk992/product-service:b5acdcf
           ports:
             - containerPort: 8000
           livenessProbe:
