@@ -3,10 +3,15 @@ import requests
 
 app = FastAPI()
 
-USER_SERVICE = "http://user-service:8000"
-PRODUCT_SERVICE = "http://product-service:8000"
-PAYMENT_SERVICE = "http://payment-service:8000"
-NOTIFICATION_SERVICE = "http://notification-service:8000"
+# USER_SERVICE = "http://user-service:8000"
+# PRODUCT_SERVICE = "http://product-service:8000"
+# PAYMENT_SERVICE = "http://payment-service:8000"
+# NOTIFICATION_SERVICE = "http://notification-service:8000"
+
+USER_SERVICE = "http://user-service"
+PRODUCT_SERVICE = "http://product-service"
+PAYMENT_SERVICE = "http://payment-service"
+NOTIFICATION_SERVICE = "http://notification-service"
 
 @app.get("/")
 def root():

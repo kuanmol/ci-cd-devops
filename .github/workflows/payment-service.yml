@@ -1,4 +1,4 @@
-name: Order Service CI
+name: Payment Service CI
 
 on:
   push:

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: payment-service
-          image: anmolk992/payment-service:6c03d87
+          image: anmolk992/payment-service:5bd9b2c
           ports:
             - containerPort: 8000
           livenessProbe:

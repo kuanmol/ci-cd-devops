@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: anmolk992/order-service:6c03d87
+          image: anmolk992/order-service:5bd9b2c
           ports:
             - containerPort: 8000
           livenessProbe:
