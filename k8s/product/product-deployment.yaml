@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: payment-service
+  name: product-service
   namespace: micro
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: payment-service
+      app: product-service
   template:
     metadata:
       labels:
-        app: payment-service
+        app: product-service
     spec:
       containers:
-        - name: payment-service
-          image: anmolk992/payment-service:110a9b8
+        - name: product-service
+          image: anmolk992/product-service:6c03d87
           ports:
             - containerPort: 8000
           livenessProbe:
