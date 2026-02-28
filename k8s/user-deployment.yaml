@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: anmolk992/user-service:latest
+          image: anmolk992/user-service:110a9b8
           ports:
             - containerPort: 8000
           livenessProbe:
