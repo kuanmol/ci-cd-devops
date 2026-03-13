@@ -28,6 +28,7 @@ def create_order(order_id: int):
         params={"amount": product["price"]}
     ).json()
 
+
     notify = requests.post(
         f"{NOTIFICATION_SERVICE}/notify",
         params={"email": user["email"]}
