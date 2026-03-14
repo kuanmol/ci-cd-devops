@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: notification-service
+  name: micro-ingress
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: 'https://github.com/kuanmol/ci-cd-devops.git'
     targetRevision: main
-    path: k8s/notification
+    path: k8s
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: micro
