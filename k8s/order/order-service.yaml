@@ -4,10 +4,9 @@ metadata:
   name: order-service
   namespace: micro
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: order-service
   ports:
     - port: 80
       targetPort: 8000
-      nodePort: 30080
